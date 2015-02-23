@@ -1,0 +1,7 @@
+material
+{
+	name "Statue2"
+	shader "Base\Shaders\materials\Normal.glsl"
+	texture0 "Statue2_D.dds"
+	texture1 "Statue2_N.dds"
+}

@@ -1,0 +1,62 @@
+object ScenePropFrame: TScenePropFrame
+  Left = 0
+  Height = 32
+  Top = 0
+  Width = 275
+  ClientHeight = 32
+  ClientWidth = 275
+  Font.CharSet = EASTEUROPE_CHARSET
+  Font.Height = -13
+  Font.Name = 'Tahoma'
+  Font.Pitch = fpVariable
+  Font.Quality = fqDraft
+  ParentFont = False
+  TabOrder = 0
+  DesignLeft = 2004
+  DesignTop = 506
+  object AmbientLightLabel: TLabel
+    Left = 7
+    Height = 16
+    Top = 8
+    Width = 83
+    Caption = 'Ambient Light:'
+    ParentColor = False
+  end
+  object AmbientLightPanel: TPanel
+    Left = 112
+    Height = 20
+    Top = 6
+    Width = 20
+    BevelOuter = bvNone
+    BorderStyle = bsSingle
+    ParentBidiMode = False
+    TabOrder = 0
+    OnClick = AmbientLightPanelClick
+  end
+  object ColorDialog: TColorDialog
+    Color = clBlack
+    CustomColors.Strings = (
+      'ColorA=000000'
+      'ColorB=000080'
+      'ColorC=008000'
+      'ColorD=008080'
+      'ColorE=800000'
+      'ColorF=800080'
+      'ColorG=808000'
+      'ColorH=808080'
+      'ColorI=C0C0C0'
+      'ColorJ=0000FF'
+      'ColorK=00FF00'
+      'ColorL=00FFFF'
+      'ColorM=FF0000'
+      'ColorN=FF00FF'
+      'ColorO=FFFF00'
+      'ColorP=FFFFFF'
+      'ColorQ=C0DCC0'
+      'ColorR=F0CAA6'
+      'ColorS=F0FBFF'
+      'ColorT=A4A0A0'
+    )
+    left = 176
+  end
+end

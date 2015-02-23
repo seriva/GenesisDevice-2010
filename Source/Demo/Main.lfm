@@ -1,0 +1,24 @@
+object MainForm: TMainForm
+  Left = 401
+  Height = 480
+  Top = 345
+  Width = 640
+  Caption = 'Demo'
+  Color = clBtnFace
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  FormStyle = fsStayOnTop
+  OnClose = FormClose
+  OnCreate = FormCreate
+  OnDestroy = FormDestroy
+  OnKeyDown = FormKeyDown
+  OnKeyPress = FormKeyPress
+  OnResize = FormResize
+  ShowInTaskBar = stAlways
+  LCLVersion = '1.2.6.0'
+  object ApplicationEvents: TApplicationProperties
+    OnIdle = ApplicationEventsIdle
+    left = 32
+  end
+end

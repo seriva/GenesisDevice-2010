@@ -1,0 +1,3 @@
+mesh "barbarian.md5mesh"
+anim "all" "barbarian.md5anim"
+mtllib "barbarian.mtl"

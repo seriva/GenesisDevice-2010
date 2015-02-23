@@ -1,0 +1,30 @@
+material
+{
+	name "metal01"
+	shader "Base\Shaders\materials\Normal.glsl"
+	texture0  "metal01_d.dds"
+	texture1 "metal01_n.dds"
+}
+
+material
+{
+	name "wood_plank_01"
+	shader "Base\Shaders\materials\Normal.glsl"
+	texture0 "wood_planks_01.dds"
+	texture1 "wood_planks_01_N.dds"
+}
+
+material
+{
+	name "carpet"
+	shader "Base\Shaders\materials\Diffuse.glsl"
+	texture0 "carpet_d.dds"
+}
+
+material
+{
+	name "throne"
+	shader "Base\Shaders\materials\Normal.glsl"
+	texture0 "throne_d.dds"
+	texture1 "throne_n.dds"
+}

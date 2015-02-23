@@ -1,0 +1,32 @@
+inherited ViewPort2DForm: TViewPort2DForm
+  Left = 911
+  Height = 300
+  Top = 395
+  Width = 438
+  ClientHeight = 300
+  ClientWidth = 438
+  Color = clBtnFace
+  OnCreate = FormCreate
+  OnDestroy = FormDestroy
+  OnMouseDown = FormMouseDown
+  OnMouseMove = FormMouseMove
+  OnMouseUp = FormMouseUp
+  OnMouseWheelDown = FormMouseWheelDown
+  OnMouseWheelUp = FormMouseWheelUp
+  inherited TopPanel: TPanel
+    Width = 438
+    ClientWidth = 438
+    inherited ViewportLabel: TLabel
+      Width = 363
+    end
+    inherited ResetViewSpeedButton: TSpeedButton
+      Left = 413
+    end
+    inherited ToggleGridSpeedButton: TSpeedButton
+      Left = 388
+    end
+    inherited ToggleLightingSpeedButton: TSpeedButton
+      Left = 363
+    end
+  end
+end

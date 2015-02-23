@@ -1,0 +1,17 @@
+material
+{
+	name "window1"
+	shader "Base\Shaders\materials\Normal.glsl"
+	texture0 "Window1_D.dds"
+	texture1 "Window1_N.dds"
+	alpha 0.5
+}
+
+material
+{
+	name "glass1"
+	shader "Base\Shaders\materials\Diffuse.glsl"
+	texture0 "Glass1_D.dds"
+	texture1 "Glass1_G.dds"
+	glowcolor 0.75 0.75 0.75 0.75
+}

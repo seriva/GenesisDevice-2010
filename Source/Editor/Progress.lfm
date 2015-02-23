@@ -1,0 +1,27 @@
+object ProgressForm: TProgressForm
+  Left = 2656
+  Height = 13
+  Top = 515
+  Width = 303
+  BorderIcons = []
+  Caption = 'Progress'
+  ClientHeight = 13
+  ClientWidth = 303
+  Color = clBtnFace
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  OnCreate = FormCreate
+  Position = poOwnerFormCenter
+  LCLVersion = '1.2.6.0'
+  object ProgressBar: TProgressBar
+    Left = 2
+    Height = 22
+    Top = 2
+    Width = 298
+    Min = 1
+    Position = 1
+    Step = 1
+    TabOrder = 0
+  end
+end

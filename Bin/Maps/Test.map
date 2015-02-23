@@ -1,0 +1,366 @@
+scene
+{
+	ambient 0.2512499988 0.2512499988 0.2512499988
+	entitycount 40
+	model
+	{
+		name "Temple"
+		matrix 1.192488064E-8 0 1 0 0 1 0 0 -1 0 1.192488064E-8 0 0 0 22.95000076 1
+		scale 1
+		static true
+		model "Models\MedievalBasement\hall_2.obj"
+		castshadow true
+	}
+	model
+	{
+		name "ThroneRoom"
+		matrix 1 0 0 0 0 1 0 0 0 0 1 0 0 -1 0 1
+		scale 1
+		static true
+		model "Models\MedievalBasement\hall_3.obj"
+		castshadow true
+	}
+	model
+	{
+		name "Hallway"
+		matrix 1.192488064E-8 0 1 0 0 1 0 0 -1 0 1.192488064E-8 0 0 0 10.80000019 1
+		scale 1
+		static true
+		model "Models\MedievalBasement\floor_hall_connector.obj"
+		castshadow true
+	}
+	model
+	{
+		name "Hallway"
+		matrix 1.390709201E-7 0 -1 0 0 1 0 0 1 0 1.390709201E-7 0 0 0 14.89999962 1
+		scale 1
+		static true
+		model "Models\MedievalBasement\floor_hall_connector.obj"
+		castshadow true
+	}
+	model
+	{
+		name "Guard1"
+		matrix -1 4.371138473E-8 -4.371138829E-8 0 -4.371138473E-8 4.371139184E-8 1 0 4.371138829E-8 1 -4.371138829E-8 0 2.349999905 -1 6.25 1
+		scale 0.02500000037
+		static false
+		model "Models\Barbarian\barbarian.md5"
+		castshadow true
+	}
+	pointlight
+	{
+		name "ThroneRoomLight"
+		matrix 1 0 0 0 0 1 0 0 0 0 1 0 0 3 0 1
+		scale 12
+		color  0.18359375 0.17578125 0.17578125
+		intensity 1
+		castshadow false
+	}
+	pointlight
+	{
+		name "FlickeringLight"
+		matrix 1 0 0 0 0 1 0 0 0 0 1 0 0 2.75 10.35000038 1
+		scale 3.5
+		color  0.78039217 0.2627451122 0
+		intensity 1.5
+		castshadow false
+	}
+	model
+	{
+		name "Lamp"
+		matrix 1 0 0 0 0 1 0 0 0 0 1 0 0 2.75 10.35000038 1
+		scale 1
+		static true
+		model "Models\MedievalBasement\dec_10.obj"
+		castshadow false
+	}
+	pointlight
+	{
+		name "FlickeringLight"
+		matrix 1 0 0 0 0 1 0 0 0 0 1 0 0 2.75 15.35000038 1
+		scale 3.5
+		color  0.78039217 0.2627451122 0
+		intensity 1.5
+		castshadow false
+	}
+	model
+	{
+		name "Lamp"
+		matrix 1 0 0 0 0 1 0 0 0 0 1 0 0 2.75 15.35000038 1
+		scale 1
+		static true
+		model "Models\MedievalBasement\dec_10.obj"
+		castshadow false
+	}
+	pointlight
+	{
+		name "FlickeringLight"
+		matrix 1 0 0 0 0 -4.371138829E-8 -1 0 0 1 -4.371138829E-8 0 0 3.799999952 22.85000038 1
+		scale 6
+		color  0.78039217 0.2627451122 0
+		intensity 1.5
+		castshadow true
+	}
+	model
+	{
+		name "Lamp"
+		matrix 1 0 0 0 0 1 0 0 0 0 1 0 0 3.799999952 22.85000038 1
+		scale 1
+		static true
+		model "Models\MedievalBasement\dec_10.obj"
+		castshadow false
+	}
+	model
+	{
+		name "Female1"
+		matrix 0.9396924376 0 -0.3420201242 0 -0.3420201242 1.311341578E-7 -0.9396924376 0 4.485051619E-8 1 1.232257887E-7 0 -0.5 0 22 1
+		scale 0.3000000119
+		static false
+		model "Models\Female\Female.md5"
+		castshadow true
+	}
+	model
+	{
+		name "Female2"
+		matrix -0.8660250902 0 0.5 0 0.5 1.311341578E-7 0.8660250902 0 -6.556707888E-8 1 -1.13565477E-7 0 0 0 23.5 1
+		scale 0.01920000091
+		static false
+		model "Models\Female\Female2.md5"
+		castshadow true
+	}
+	model
+	{
+		name "Guard1"
+		matrix -1 4.371138473E-8 -4.371138829E-8 0 -4.371138473E-8 4.371139184E-8 1 0 4.371138829E-8 1 -4.371138829E-8 0 -2.349999905 -1 6.25 1
+		scale 0.02500000037
+		static false
+		model "Models\Barbarian\barbarian.md5"
+		castshadow true
+	}
+	model
+	{
+		name "Statue1"
+		matrix -1 0 8.742277657E-8 0 0 1 0 0 -8.742277657E-8 0 -1 0 0.01750000007 0.5199999809 27.25 1
+		scale 1.899999976
+		static true
+		model "Models\Statues\Statue6.obj"
+		castshadow true
+	}
+	model
+	{
+		name "Statue2"
+		matrix 1 0 0 0 0 1 0 0 0 0 1 0 1.75 0 18.35000038 1
+		scale 1
+		static true
+		model "Models\Statues\Statue2.obj"
+		castshadow true
+	}
+	model
+	{
+		name "Statue2"
+		matrix 1 0 0 0 0 1 0 0 0 0 1 0 -1.75 0 18.35000038 1
+		scale 1
+		static true
+		model "Models\Statues\Statue2.obj"
+		castshadow true
+	}
+	model
+	{
+		name "Window"
+		matrix 1 0 0 0 0 1 0 0 0 0 1 0 1.75 -1 -7.690000057 1
+		scale 0.8000000119
+		static true
+		model "Models\Windows\Window1.obj"
+		castshadow true
+	}
+	model
+	{
+		name "Window"
+		matrix 1 0 0 0 0 1 0 0 0 0 1 0 -1.75 -1 -7.690000057 1
+		scale 0.8000000119
+		static true
+		model "Models\Windows\Window1.obj"
+		castshadow true
+	}
+	model
+	{
+		name "Window"
+		matrix -4.371138829E-8 0 -1 0 0 1 0 0 1 0 -4.371138829E-8 0 -6.974999905 -1 -5.574999809 1
+		scale 0.8000000119
+		static true
+		model "Models\Windows\Window1.obj"
+		castshadow true
+	}
+	model
+	{
+		name "Window"
+		matrix -4.371138829E-8 0 -1 0 0 1 0 0 1 0 -4.371138829E-8 0 -6.974999905 -1 -2.075000048 1
+		scale 0.8000000119
+		static true
+		model "Models\Windows\Window1.obj"
+		castshadow true
+	}
+	model
+	{
+		name "Window"
+		matrix -4.371138829E-8 0 -1 0 0 1 0 0 1 0 -4.371138829E-8 0 -6.974999905 -1 1.475000024 1
+		scale 0.8000000119
+		static true
+		model "Models\Windows\Window1.obj"
+		castshadow true
+	}
+	model
+	{
+		name "Window"
+		matrix -4.371138829E-8 0 -1 0 0 1 0 0 1 0 -4.371138829E-8 0 -6.974999905 -1 4.954999924 1
+		scale 0.8000000119
+		static true
+		model "Models\Windows\Window1.obj"
+		castshadow true
+	}
+	model
+	{
+		name "Window"
+		matrix 1.311341578E-7 0 1 0 0 1 0 0 -1 0 1.311341578E-7 0 6.974999905 -1 -5.574999809 1
+		scale 0.8000000119
+		static true
+		model "Models\Windows\Window1.obj"
+		castshadow true
+	}
+	model
+	{
+		name "Window"
+		matrix 1.311341578E-7 0 1 0 0 1 0 0 -1 0 1.311341578E-7 0 6.974999905 -1 -2.075000048 1
+		scale 0.8000000119
+		static true
+		model "Models\Windows\Window1.obj"
+		castshadow true
+	}
+	model
+	{
+		name "Window"
+		matrix 1.311341578E-7 0 1 0 0 1 0 0 -1 0 1.311341578E-7 0 6.974999905 -1 1.475000024 1
+		scale 0.8000000119
+		static true
+		model "Models\Windows\Window1.obj"
+		castshadow true
+	}
+	model
+	{
+		name "Window"
+		matrix 1.311341578E-7 0 1 0 0 1 0 0 -1 0 1.311341578E-7 0 6.974999905 -1 4.954999924 1
+		scale 0.8000000119
+		static true
+		model "Models\Windows\Window1.obj"
+		castshadow true
+	}
+	pointlight
+	{
+		name "GlassLight"
+		matrix 1 0 0 0 0 1 0 0 0 0 1 0 5.400000095 1 -5.574999809 1
+		scale 3.5
+		color  0.22265625 0.22265625 0.17578125
+		intensity 1.5
+		castshadow false
+	}
+	pointlight
+	{
+		name "GlassLight"
+		matrix 1 0 0 0 0 1 0 0 0 0 1 0 5.400000095 1 -2.075000048 1
+		scale 3.5
+		color  0.22265625 0.22265625 0.17578125
+		intensity 1.5
+		castshadow false
+	}
+	pointlight
+	{
+		name "GlassLight"
+		matrix 1 0 0 0 0 1 0 0 0 0 1 0 5.400000095 1 1.475000024 1
+		scale 3.5
+		color  0.22265625 0.22265625 0.17578125
+		intensity 1.5
+		castshadow false
+	}
+	pointlight
+	{
+		name "GlassLight"
+		matrix 1 0 0 0 0 1 0 0 0 0 1 0 5.400000095 1 4.954999924 1
+		scale 3.5
+		color  0.22265625 0.22265625 0.17578125
+		intensity 1.5
+		castshadow false
+	}
+	pointlight
+	{
+		name "GlassLight"
+		matrix 1 0 0 0 0 1 0 0 0 0 1 0 -5.400000095 1 -5.574999809 1
+		scale 3.5
+		color  0.22265625 0.22265625 0.17578125
+		intensity 1.5
+		castshadow false
+	}
+	pointlight
+	{
+		name "GlassLight"
+		matrix 1 0 0 0 0 1 0 0 0 0 1 0 -5.400000095 1 -2.075000048 1
+		scale 3.5
+		color  0.22265625 0.22265625 0.17578125
+		intensity 1.5
+		castshadow false
+	}
+	pointlight
+	{
+		name "GlassLight"
+		matrix 1 0 0 0 0 1 0 0 0 0 1 0 -5.400000095 1 1.475000024 1
+		scale 3.5
+		color  0.22265625 0.22265625 0.17578125
+		intensity 1.5
+		castshadow false
+	}
+	pointlight
+	{
+		name "GlassLight"
+		matrix 1 0 0 0 0 1 0 0 0 0 1 0 -5.400000095 1 4.954999924 1
+		scale 3.5
+		color  0.22265625 0.22265625 0.17578125
+		intensity 1.5
+		castshadow false
+	}
+	pointlight
+	{
+		name "GlassLight"
+		matrix 1 0 0 0 0 1 0 0 0 0 1 0 -1.75 1 -6 1
+		scale 3.5
+		color  0.22265625 0.22265625 0.17578125
+		intensity 1.5
+		castshadow false
+	}
+	pointlight
+	{
+		name "GlassLight"
+		matrix 1 0 0 0 0 1 0 0 0 0 1 0 1.75 1 -6 1
+		scale 3.5
+		color  0.22265625 0.22265625 0.17578125
+		intensity 1.5
+		castshadow false
+	}
+	model
+	{
+		name "Carpet"
+		matrix -4.371138829E-8 0 -1 0 0 1 0 0 1 0 -4.371138829E-8 0 -0.02999999933 -0.8899999857 -5.78000021 1
+		scale 0.1000000015
+		static true
+		model "Models\Props\carpet.obj"
+		castshadow true
+	}
+	model
+	{
+		name "Throne"
+		matrix 1 0 0 0 0 1 0 0 0 0 1 0 0 -0.2199999988 -7.099999905 1
+		scale 0.4499999881
+		static true
+		model "Models\Props\Throne.obj"
+		castshadow true
+	}
+}
+

@@ -1,0 +1,3 @@
+mesh "Female.md5mesh"
+anim "all" "Female.md5anim"
+mtllib "materials.mtl"

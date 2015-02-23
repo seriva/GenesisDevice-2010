@@ -1,0 +1,170 @@
+object EntityPropFrame: TEntityPropFrame
+  Left = 0
+  Height = 103
+  Top = 0
+  Width = 275
+  ClientHeight = 103
+  ClientWidth = 275
+  Font.Height = -12
+  Font.Name = 'Tahoma'
+  LCLVersion = '1.2.6.0'
+  ParentFont = False
+  TabOrder = 0
+  DesignLeft = 2179
+  DesignTop = 729
+  object NameLabel: TLabel
+    Left = 11
+    Height = 14
+    Top = 3
+    Width = 35
+    Caption = 'Name:'
+    ParentColor = False
+  end
+  object PositionLabel: TLabel
+    Left = 11
+    Height = 14
+    Top = 28
+    Width = 46
+    Caption = 'Position:'
+    ParentColor = False
+  end
+  object RotationLabel: TLabel
+    Left = 11
+    Height = 14
+    Top = 53
+    Width = 41
+    Caption = 'Rotate:'
+    ParentColor = False
+  end
+  object ScaleLabel: TLabel
+    Left = 11
+    Height = 14
+    Top = 78
+    Width = 32
+    Caption = 'Scale:'
+    ParentColor = False
+  end
+  object Label1: TLabel
+    Left = 134
+    Height = 19
+    Top = 26
+    Width = 7
+    Caption = '-'
+    Font.Color = clWindowText
+    Font.Height = -16
+    Font.Name = 'Tahoma'
+    Font.Style = [fsBold]
+    ParentColor = False
+    ParentFont = False
+  end
+  object Label2: TLabel
+    Left = 207
+    Height = 19
+    Top = 26
+    Width = 7
+    Caption = '-'
+    Font.Color = clWindowText
+    Font.Height = -16
+    Font.Name = 'Tahoma'
+    Font.Style = [fsBold]
+    ParentColor = False
+    ParentFont = False
+  end
+  object Label3: TLabel
+    Left = 134
+    Height = 19
+    Top = 51
+    Width = 7
+    Caption = '-'
+    Font.Color = clWindowText
+    Font.Height = -16
+    Font.Name = 'Tahoma'
+    Font.Style = [fsBold]
+    ParentColor = False
+    ParentFont = False
+  end
+  object Label4: TLabel
+    Left = 207
+    Height = 19
+    Top = 51
+    Width = 7
+    Caption = '-'
+    Font.Color = clWindowText
+    Font.Height = -16
+    Font.Name = 'Tahoma'
+    Font.Style = [fsBold]
+    ParentColor = False
+    ParentFont = False
+  end
+  object NameEdit: TEdit
+    Left = 79
+    Height = 22
+    Top = 1
+    Width = 192
+    OnChange = NameEditChange
+    TabOrder = 0
+  end
+  object PosXEdit: TEdit
+    Left = 78
+    Height = 22
+    Top = 26
+    Width = 49
+    OnKeyDown = PosEditKeyDown
+    OnKeyPress = PosEditKeyPress
+    TabOrder = 1
+  end
+  object PosYEdit: TEdit
+    Left = 150
+    Height = 22
+    Top = 26
+    Width = 49
+    OnKeyDown = PosEditKeyDown
+    OnKeyPress = PosEditKeyPress
+    TabOrder = 2
+  end
+  object PosZEdit: TEdit
+    Left = 222
+    Height = 22
+    Top = 26
+    Width = 49
+    OnKeyDown = PosEditKeyDown
+    OnKeyPress = PosEditKeyPress
+    TabOrder = 3
+  end
+  object RotXEdit: TEdit
+    Left = 78
+    Height = 22
+    Top = 51
+    Width = 49
+    OnKeyDown = RotEditKeyDown
+    OnKeyPress = RotEditKeyPress
+    TabOrder = 4
+  end
+  object RotYEdit: TEdit
+    Left = 150
+    Height = 22
+    Top = 51
+    Width = 49
+    OnKeyDown = RotEditKeyDown
+    OnKeyPress = RotEditKeyPress
+    TabOrder = 5
+  end
+  object RotZEdit: TEdit
+    Left = 222
+    Height = 22
+    Top = 51
+    Width = 49
+    OnKeyDown = RotEditKeyDown
+    OnKeyPress = RotEditKeyPress
+    TabOrder = 6
+  end
+  object ScaleEdit: TEdit
+    Left = 78
+    Height = 22
+    Top = 76
+    Width = 49
+    OnKeyDown = ScaleEditKeyDown
+    OnKeyPress = ScaleEditKeyPress
+    TabOrder = 7
+  end
+end

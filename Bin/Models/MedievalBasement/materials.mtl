@@ -1,0 +1,122 @@
+material
+{
+	name "con1_D_Smoothing"
+	shader "Base\Shaders\materials\normal.glsl"
+	texture0 "con1_D.dds"
+	texture1 "con1_N.dds"
+}
+
+material
+{
+	name "ref1_D_Smoothing"
+	shader "Base\Shaders\materials\normal.glsl"
+	texture0 "ref1_D.dds"
+	texture1 "ref1_N.dds"
+}
+
+material
+{
+	name "ground_mat"
+	shader "Base\Shaders\materials\normal.glsl"
+	texture0 "flo_D.dds"
+	texture1 "flo_N.dds"
+}
+
+material
+{
+	name "sto1_D_Smoothing"
+	shader "Base\Shaders\materials\normal.glsl"
+	texture0 "sto1_D.dds"
+	texture1 "sto1_N.dds"
+}
+
+material
+{
+	name "sto4_D_Smoothing"
+	shader "Base\Shaders\materials\normal.glsl"
+	texture0 "sto4_D.dds"
+	texture1 "sto4_N.dds"
+}
+
+material
+{
+	name "sto5_D_Smoothing"
+	shader "Base\Shaders\materials\normal.glsl"
+	texture0 "sto5_D.dds"
+	texture1 "sto5_N.dds"
+}
+
+material
+{
+	name "dec_2_D_Smoothing"
+	shader "Base\Shaders\materials\normal.glsl"
+	texture0 "dec_2_D.dds"
+	texture1 "dec_2_N.dds"
+}
+
+material
+{
+	name "dec_4_D_Smoothing"
+	shader "Base\Shaders\materials\normal.glsl"
+	texture0 "dec_4_D.dds"
+	texture1 "dec_4_N.dds"
+}
+
+material
+{
+	name "dec_5_D_Smoothing"
+	shader "Base\Shaders\materials\normal.glsl"
+	texture0 "dec_5_D.dds"
+	texture1 "dec_5_N.dds"
+}
+
+material
+{
+	name "dec_10_D_Smoothing"
+	shader "Base\Shaders\materials\normal.glsl"
+	texture0 "dec_10_D.dds"
+	texture1 "dec_10_N.dds"
+	texture2 "dec_10_G.dds"
+	glowcolor 0.75 0.75 0.75 0.75
+}
+
+material
+{
+	name "dec_15_D_Smoothing"
+	shader "Base\Shaders\materials\normal.glsl"
+	texture0 "dec_15_D.dds"
+	texture1 "dec_15_N.dds"
+}
+
+material
+{
+	name "dec_16_D_Smoothing"
+	shader "Base\Shaders\materials\normal.glsl"
+	texture0 "dec_16_D.dds"
+	texture1 "dec_16_N.dds"
+}
+
+material
+{
+	name "dec_22_D_Smoothing"
+	shader "Base\Shaders\materials\normal.glsl"
+	texture0 "dec_22_D.dds"
+	texture1 "dec_22_N.dds"
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

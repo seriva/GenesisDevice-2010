@@ -1,0 +1,50 @@
+inherited SpotLightEntityPropFrame: TSpotLightEntityPropFrame
+  Height = 237
+  ClientHeight = 237
+  DesignLeft = 1174
+  DesignTop = 439
+  object InnerConeLabel: TLabel[22]
+    Left = 11
+    Height = 14
+    Top = 181
+    Width = 60
+    Caption = 'Innercone:'
+    ParentColor = False
+  end
+  object OuterConeLabel: TLabel[23]
+    Left = 11
+    Height = 14
+    Top = 209
+    Width = 63
+    Caption = 'Outercone:'
+    ParentColor = False
+  end
+  object InnerConeTrackBar: TTrackBar[24]
+    Left = 76
+    Height = 22
+    Top = 181
+    Width = 200
+    Max = 85
+    Min = 5
+    OnChange = InnerConeTrackBarChange
+    Position = 5
+    TickMarks = tmBoth
+    TickStyle = tsNone
+    TabOrder = 11
+  end
+  object OuterConeTrackBar: TTrackBar[25]
+    Left = 76
+    Height = 22
+    Top = 209
+    Width = 200
+    Max = 85
+    Min = 5
+    OnChange = OuterConeTrackBarChange
+    Position = 5
+    TickMarks = tmBoth
+    TickStyle = tsNone
+    TabOrder = 12
+  end
+  inherited ColorDialog: TColorDialog[26]
+  end
+end

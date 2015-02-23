@@ -1,0 +1,25 @@
+inherited ModelEntityPropFrame: TModelEntityPropFrame
+  Height = 132
+  ClientHeight = 132
+  DesignLeft = 2197
+  DesignTop = 922
+  inherited NameEdit: TEdit
+    TabOrder = 8
+  end
+  object ShadowsLabel: TLabel[16]
+    Left = 11
+    Height = 14
+    Top = 105
+    Width = 53
+    Caption = 'Shadows:'
+    ParentColor = False
+  end
+  object CastShadowsCheckBox: TCheckBox[17]
+    Left = 79
+    Height = 23
+    Top = 103
+    Width = 24
+    OnClick = CastShadowsCheckBoxClick
+    TabOrder = 0
+  end
+end

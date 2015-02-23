@@ -1,0 +1,16 @@
+material
+{
+	name "armor"
+	shader "Base\Shaders\Materials\Normal.glsl"
+	texture0 "armor_d.dds"
+	texture1 "armor_n.dds"
+}
+
+material
+{
+	name "barbarian"
+	shader "Base\Shaders\Materials\Normal.glsl"
+	texture0 "barbarian_d.dds"
+	texture1 "barbarian_n.dds"
+}
+

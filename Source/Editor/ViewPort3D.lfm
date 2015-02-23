@@ -1,0 +1,13 @@
+inherited ViewPort3DForm: TViewPort3DForm
+  Left = 0
+  Top = 0
+  Color = clBtnFace
+  OnCreate = FormCreate
+  OnDestroy = FormDestroy
+  OnMouseDown = FormMouseDown
+  OnMouseMove = FormMouseMove
+  OnMouseUp = FormMouseUp
+  OnMouseWheelDown = FormMouseWheelDown
+  OnMouseWheelUp = FormMouseWheelUp
+  OnResize = FormResize
+end
