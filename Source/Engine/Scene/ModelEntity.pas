@@ -1,14 +1,7 @@
-unit ModelEntity;
-
-{$MODE Delphi}
-
-interface
-
 {*******************************************************************************
 *                            Genesis Device Engine                             *
 *                   Copyright © 2007-2015 Luuk van Venrooij                    *
 *                        http://www.luukvanvenrooij.nl                         *
-*                         luukvanvenrooij84@gmail.com                          *
 ********************************************************************************
 *                                                                              *
 *  This file is part of the Genesis Device Engine.                             *
@@ -27,6 +20,12 @@ interface
 *  along with Genesis Device.  If not, see <http://www.gnu.org/licenses/>.     *
 *                                                                              *
 *******************************************************************************}
+unit ModelEntity;
+
+{$MODE Delphi}
+
+interface
+
 uses
   dglOpenGL,
   Math,
