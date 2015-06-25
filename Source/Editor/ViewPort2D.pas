@@ -28,7 +28,6 @@ interface
 
 uses
   Windows,
-  Messages,
   SysUtils,
   Variants,
   Classes,
@@ -42,7 +41,6 @@ uses
   dglOpenGL,
   ViewPort,
   Scene,
-  FloatArray,
   Mathematics;
 
 type
@@ -96,8 +94,6 @@ implementation
 
 uses
   Base,
-  BitmapFont,
-  Configuration,
   Main;
 
 procedure TViewPort2DForm.FormCreate(Sender: TObject);

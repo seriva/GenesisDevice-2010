@@ -34,8 +34,6 @@ uses
   Resource,
   Stream,
   Surface,
-  FloatArray,
-  IntegerArray,
   Material;
 
 type

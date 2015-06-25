@@ -191,18 +191,22 @@ var
   iEntity           : TEntity;
   iModelEntity      : TAnimatedModelEntity;
   iLightEntity      : TPointLightEntity;
+  iIntel            : boolean;
 begin
   //create the engine global systems
   InitEngine(ExtractFilePath(Application.ExeName));
 
   //set some settings stuff.
+  iIntel := pos('Intel', Engine.Renderer.Vendor) > 0;
+  if iIntel then
+    Engine.Log.Print(self.ClassName, 'Intel graphics detected, disabling shadows and SSOA', false);
   if ConfigurationForm.BloomCheckBox.Checked = false then
     Engine.Console.ExecuteCommand('r_glow 0');
-  if ConfigurationForm.AmbientOcclusionCheckBox.Checked = false then
+  if (ConfigurationForm.AmbientOcclusionCheckBox.Checked = false) or iIntel then
     Engine.Console.ExecuteCommand('r_ssao 0');
   if ConfigurationForm.FXAACheckBox.Checked = false then
     Engine.Console.ExecuteCommand('r_fxaa 0');
-  if ConfigurationForm.ShadowsCheckBox.Checked = false then
+  if (ConfigurationForm.ShadowsCheckBox.Checked = false) or iIntel then
     Engine.Console.ExecuteCommand('r_shadows 0');
 
   //create a rendering context

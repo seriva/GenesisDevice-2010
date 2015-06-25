@@ -220,6 +220,14 @@ begin
   //init engine
   InitEngine(ExtractFilePath(Application.ExeName));
 
+  //disable some features for intel.
+  if pos('Intel', Engine.Renderer.Vendor) > 0 then
+  begin
+    Engine.Log.Print(self.ClassName, 'Intel graphics detected, disabling shadows and SSOA', false);
+    Engine.Console.ExecuteCommand('r_ssao 0');
+    Engine.Console.ExecuteCommand('r_shadows 0');
+  end;
+
   //load editor resources
   GridShader    := LoadGLSLResource('Base\Shaders\Editor\Grid.glsl') as TShaderProgram;
   LightShader   := LoadGLSLResource('Base\Shaders\Editor\Light.glsl') as TShaderProgram;

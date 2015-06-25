@@ -27,8 +27,7 @@ unit ModelEntityFrame;
 interface
 
 uses
-  LCLIntf, LCLType, LMessages,
-  Messages,
+  LCLIntf, LCLType,
   SysUtils,
   Variants,
   Classes,
@@ -56,8 +55,7 @@ implementation
 {$R *.lfm}
 
 uses
-  Main,
-  Mathematics;
+  Main;
 
 constructor TModelEntityPropFrame.Create(AOwner: TComponent; const aEntity : TEntity);
 begin

@@ -108,7 +108,8 @@ begin
     if HasBuffers then
     begin
       GBuffer := TGBuffer.Create(Width, Height);
-      SBuffer := TSBuffer.Create(Width, Height);
+      if Engine.Renderer.DoShadows then
+         SBuffer := TSBuffer.Create(Width, Height);
     end;
   except
     on E: Exception do
@@ -142,7 +143,8 @@ begin
   if HasBuffers then
   begin
     GBuffer.Resize( Width, Height );
-    SBuffer.Resize( Width, Height );
+    if Engine.Renderer.DoShadows then
+      SBuffer.Resize( Width, Height );
   end;
 end;
 
@@ -152,7 +154,7 @@ begin
   wglMakeCurrent(DC, RC);
   glClear(GL_COLOR_BUFFER_BIT or GL_DEPTH_BUFFER_BIT);
   glViewPort(0,0,Width,Height);
-  if HasBuffers then
+  if HasBuffers and Engine.Renderer.DoShadows then
     SBuffer.ResetShadowUsage();
 end;
 

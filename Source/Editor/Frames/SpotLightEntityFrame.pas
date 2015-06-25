@@ -28,8 +28,7 @@ interface
 
 uses
   LCLIntf,
-  LCLType, LMessages,
-  Messages,
+  LCLType,
   SysUtils,
   Variants,
   Classes,

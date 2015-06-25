@@ -29,8 +29,6 @@ interface
 uses
   LCLIntf,
   LCLType,
-  LMessages,
-  Messages,
   SysUtils,
   Variants,
   Classes,
@@ -38,7 +36,6 @@ uses
   Controls,
   Forms,
   Dialogs,
-  Base,
   Scene,
   FloatArray,
   ViewPort2D,
@@ -59,7 +56,7 @@ type
 implementation
 
 uses
-  Main, Selection;
+  Main;
 
 {$R *.lfm}
 

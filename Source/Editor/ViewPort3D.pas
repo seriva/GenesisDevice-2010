@@ -28,7 +28,6 @@ interface
 
 uses
   Windows,
-  Messages,
   SysUtils,
   Variants,
   Classes,
@@ -39,15 +38,12 @@ uses
   dglOpenGL,
   Mathematics,
   ViewPort,
-  Renderer,
   Texture,
   Entity,
   ModelEntity,
   FrameBuffer,
   RenderBuffer,
   EditorEntity,
-  PointLightEntity,
-  SpotLightEntity,
   Base;
 
 type
@@ -92,8 +88,7 @@ implementation
 {$R *.lfm}
 
 uses
-  Main,
-  Configuration, Scene, Selection;
+  Main;
 
 function  TViewPort3DForm.CalculateCreateEntityPos(const aX, aY : Integer): TVector3f;
 var

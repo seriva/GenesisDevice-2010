@@ -27,8 +27,7 @@ unit ViewPortTop;
 interface
 
 uses
-  LCLIntf, LCLType, LMessages,
-  Messages,
+  LCLIntf, LCLType,
   SysUtils,
   Variants,
   Classes,
@@ -39,9 +38,7 @@ uses
   FloatArray,
   ViewPort2D,
   Mathematics,
-  Base,
-  Scene,
-  BitmapFont;
+  Scene;
 
 type
   TViewPortTopForm = class(TViewPort2DForm)
@@ -57,7 +54,7 @@ type
 implementation
 
 uses
-  Main, Selection;
+  Main;
 
 {$R *.lfm}
 

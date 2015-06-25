@@ -27,8 +27,7 @@ unit Configuration;
 interface
 
 uses
-  LCLIntf, LCLType, LMessages,
-  Messages,
+  LCLIntf, LCLType,
   SysUtils,
   Variants,
   Classes,

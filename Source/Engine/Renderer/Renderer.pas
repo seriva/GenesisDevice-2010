@@ -63,6 +63,9 @@ type
     //shadow base buffers
     ShadowBaseMaps : array[0..7] of TTexture;
 
+    //info
+    Vendor                 : String;
+
     //shaders
     //common shaders
     ColorShader            : TShaderProgram;
@@ -199,7 +202,8 @@ begin
   Engine.Log.Print(self.ClassName, 'Created resource context');
 
   //get some renderer info
-  Engine.Log.Print(self.ClassName, 'Vendor: ' + String(AnsiString(glGetString(GL_VENDOR))));
+  Vendor := String(AnsiString(glGetString(GL_VENDOR)));
+  Engine.Log.Print(self.ClassName, 'Vendor: ' + Vendor);
   Engine.Log.Print(self.ClassName, 'Renderer: ' + String(AnsiString(glGetString(GL_RENDERER))));
   Engine.Log.Print(self.ClassName, 'Version: ' + String(AnsiString(glGetString(GL_VERSION))));
 
@@ -290,7 +294,7 @@ begin
   glNewList(FWireCone,GL_COMPILE);
     iQuadric := gluNewQuadric();
     gluQuadricOrientation(iQuadric, GLU_OUTSIDE);
-    gluQuadricTexture(iQuadric,GLboolean(GLboolean(false))); { *Converted from gluQuadricTexture* } { *Converted from gluQuadricTexture* }
+    gluQuadricTexture(iQuadric,GLboolean(GLboolean(false)));
     gluQuadricDrawStyle(iQuadric, GLU_LINE);
     gluCylinder(iQuadric,0.0,1.0,1.0,16,1);
     gluDeleteQuadric(iQuadric);

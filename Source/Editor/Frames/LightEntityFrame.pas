@@ -29,8 +29,6 @@ interface
 uses
   LCLIntf,
   LCLType,
-  LMessages,
-  Messages,
   SysUtils,
   Variants,
   Classes,
@@ -67,8 +65,7 @@ implementation
 {$R *.lfm}
 
 uses
-  Main,
-  Mathematics;
+  Main;
 
 constructor TLightEntityPropFrame.Create(AOwner: TComponent; const aEntity : TEntity);
 begin

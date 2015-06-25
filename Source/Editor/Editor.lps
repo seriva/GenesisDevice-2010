@@ -8,8 +8,7 @@
       <Unit0>
         <Filename Value="Editor.lpr"/>
         <IsPartOfProject Value="True"/>
-        <IsVisibleTab Value="True"/>
-        <EditorIndex Value="3"/>
+        <EditorIndex Value="11"/>
         <WindowIndex Value="0"/>
         <TopLine Value="66"/>
         <CursorPos X="3" Y="103"/>
@@ -26,10 +25,11 @@
         <UnitName Value="Main"/>
         <EditorIndex Value="0"/>
         <WindowIndex Value="0"/>
-        <TopLine Value="751"/>
-        <CursorPos X="19" Y="149"/>
+        <TopLine Value="207"/>
+        <CursorPos X="46" Y="224"/>
         <UsageCount Value="60"/>
         <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
         <DefaultSyntaxHighlighter Value="Delphi"/>
       </Unit1>
       <Unit2>
@@ -37,10 +37,12 @@
         <IsPartOfProject Value="True"/>
         <HasResources Value="True"/>
         <UnitName Value="Configuration"/>
+        <EditorIndex Value="6"/>
         <WindowIndex Value="0"/>
-        <TopLine Value="34"/>
-        <CursorPos X="23" Y="75"/>
+        <TopLine Value="13"/>
+        <CursorPos X="19" Y="30"/>
         <UsageCount Value="60"/>
+        <Loaded Value="True"/>
         <DefaultSyntaxHighlighter Value="Delphi"/>
       </Unit2>
       <Unit3>
@@ -50,10 +52,12 @@
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="ViewPort"/>
+        <EditorIndex Value="5"/>
         <WindowIndex Value="0"/>
-        <TopLine Value="115"/>
-        <CursorPos X="25" Y="419"/>
+        <TopLine Value="13"/>
+        <CursorPos X="10" Y="30"/>
         <UsageCount Value="60"/>
+        <Loaded Value="True"/>
         <DefaultSyntaxHighlighter Value="Delphi"/>
       </Unit3>
       <Unit4>
@@ -63,10 +67,10 @@
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="ViewPort2D"/>
-        <EditorIndex Value="5"/>
+        <EditorIndex Value="14"/>
         <WindowIndex Value="0"/>
-        <TopLine Value="435"/>
-        <CursorPos X="85" Y="471"/>
+        <TopLine Value="80"/>
+        <CursorPos X="3" Y="97"/>
         <UsageCount Value="60"/>
         <Loaded Value="True"/>
         <DefaultSyntaxHighlighter Value="Delphi"/>
@@ -78,10 +82,10 @@
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="ViewPort3D"/>
-        <EditorIndex Value="1"/>
+        <EditorIndex Value="2"/>
         <WindowIndex Value="0"/>
-        <TopLine Value="313"/>
-        <CursorPos X="62" Y="329"/>
+        <TopLine Value="43"/>
+        <CursorPos X="83" Y="58"/>
         <UsageCount Value="60"/>
         <Loaded Value="True"/>
         <DefaultSyntaxHighlighter Value="Delphi"/>
@@ -91,10 +95,12 @@
         <IsPartOfProject Value="True"/>
         <HasResources Value="True"/>
         <UnitName Value="ViewPortFront"/>
+        <EditorIndex Value="13"/>
         <WindowIndex Value="0"/>
-        <TopLine Value="89"/>
-        <CursorPos X="99" Y="112"/>
+        <TopLine Value="42"/>
+        <CursorPos X="7" Y="59"/>
         <UsageCount Value="60"/>
+        <Loaded Value="True"/>
         <DefaultSyntaxHighlighter Value="Delphi"/>
       </Unit6>
       <Unit7>
@@ -104,10 +110,10 @@
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="ViewPortSide"/>
-        <EditorIndex Value="4"/>
+        <EditorIndex Value="12"/>
         <WindowIndex Value="0"/>
-        <TopLine Value="87"/>
-        <CursorPos X="3" Y="33"/>
+        <TopLine Value="42"/>
+        <CursorPos X="7" Y="59"/>
         <UsageCount Value="60"/>
         <Loaded Value="True"/>
         <DefaultSyntaxHighlighter Value="Delphi"/>
@@ -117,10 +123,12 @@
         <IsPartOfProject Value="True"/>
         <HasResources Value="True"/>
         <UnitName Value="ViewPortTop"/>
+        <EditorIndex Value="9"/>
         <WindowIndex Value="0"/>
-        <TopLine Value="66"/>
-        <CursorPos X="14" Y="76"/>
+        <TopLine Value="40"/>
+        <CursorPos X="8" Y="57"/>
         <UsageCount Value="60"/>
+        <Loaded Value="True"/>
         <DefaultSyntaxHighlighter Value="Delphi"/>
       </Unit8>
       <Unit9>
@@ -149,10 +157,12 @@
         <Filename Value="..\Engine\General\Base.pas"/>
         <IsPartOfProject Value="True"/>
         <UnitName Value="Base"/>
+        <EditorIndex Value="1"/>
         <WindowIndex Value="0"/>
-        <TopLine Value="86"/>
-        <CursorPos X="1" Y="107"/>
+        <TopLine Value="80"/>
+        <CursorPos X="11" Y="68"/>
         <UsageCount Value="60"/>
+        <Loaded Value="True"/>
         <DefaultSyntaxHighlighter Value="Delphi"/>
       </Unit12>
       <Unit13>
@@ -231,10 +241,13 @@
         <Filename Value="..\Engine\Renderer\Mesh.pas"/>
         <IsPartOfProject Value="True"/>
         <UnitName Value="Mesh"/>
+        <IsVisibleTab Value="True"/>
+        <EditorIndex Value="7"/>
         <WindowIndex Value="0"/>
-        <TopLine Value="47"/>
-        <CursorPos X="3" Y="125"/>
+        <TopLine Value="19"/>
+        <CursorPos X="11" Y="36"/>
         <UsageCount Value="60"/>
+        <Loaded Value="True"/>
         <DefaultSyntaxHighlighter Value="Delphi"/>
       </Unit21>
       <Unit22>
@@ -409,7 +422,7 @@
         <Filename Value="Selection.pas"/>
         <IsPartOfProject Value="True"/>
         <UnitName Value="Selection"/>
-        <EditorIndex Value="2"/>
+        <EditorIndex Value="10"/>
         <WindowIndex Value="0"/>
         <TopLine Value="88"/>
         <CursorPos X="57" Y="103"/>
@@ -440,10 +453,12 @@
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="Progress"/>
+        <EditorIndex Value="15"/>
         <WindowIndex Value="0"/>
-        <TopLine Value="63"/>
-        <CursorPos X="13" Y="98"/>
+        <TopLine Value="24"/>
+        <CursorPos X="30" Y="30"/>
         <UsageCount Value="60"/>
+        <Loaded Value="True"/>
         <DefaultSyntaxHighlighter Value="Delphi"/>
       </Unit47>
       <Unit48>
@@ -499,10 +514,12 @@
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Frame"/>
         <UnitName Value="EntityFrame"/>
+        <EditorIndex Value="17"/>
         <WindowIndex Value="0"/>
-        <TopLine Value="140"/>
-        <CursorPos X="28" Y="152"/>
+        <TopLine Value="13"/>
+        <CursorPos X="19" Y="30"/>
         <UsageCount Value="60"/>
+        <Loaded Value="True"/>
         <DefaultSyntaxHighlighter Value="Delphi"/>
       </Unit53>
       <Unit54>
@@ -512,10 +529,12 @@
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Frame"/>
         <UnitName Value="SceneFrame"/>
+        <EditorIndex Value="16"/>
         <WindowIndex Value="0"/>
-        <TopLine Value="40"/>
-        <CursorPos X="11" Y="43"/>
+        <TopLine Value="15"/>
+        <CursorPos X="11" Y="31"/>
         <UsageCount Value="60"/>
+        <Loaded Value="True"/>
         <DefaultSyntaxHighlighter Value="Delphi"/>
       </Unit54>
       <Unit55>
@@ -525,10 +544,12 @@
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Frame"/>
         <UnitName Value="ModelEntityFrame"/>
+        <EditorIndex Value="8"/>
         <WindowIndex Value="0"/>
-        <TopLine Value="38"/>
-        <CursorPos X="22" Y="59"/>
+        <TopLine Value="41"/>
+        <CursorPos X="7" Y="58"/>
         <UsageCount Value="60"/>
+        <Loaded Value="True"/>
         <DefaultSyntaxHighlighter Value="Delphi"/>
       </Unit55>
       <Unit56>
@@ -538,10 +559,12 @@
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Frame"/>
         <UnitName Value="LightEntityFrame"/>
+        <EditorIndex Value="4"/>
         <WindowIndex Value="0"/>
-        <TopLine Value="15"/>
-        <CursorPos X="49" Y="31"/>
+        <TopLine Value="51"/>
+        <CursorPos X="7" Y="68"/>
         <UsageCount Value="60"/>
+        <Loaded Value="True"/>
         <DefaultSyntaxHighlighter Value="Delphi"/>
       </Unit56>
       <Unit57>
@@ -551,10 +574,12 @@
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Frame"/>
         <UnitName Value="SpotLightEntityFrame"/>
+        <EditorIndex Value="3"/>
         <WindowIndex Value="0"/>
-        <TopLine Value="1"/>
-        <CursorPos X="12" Y="32"/>
+        <TopLine Value="14"/>
+        <CursorPos X="11" Y="31"/>
         <UsageCount Value="60"/>
+        <Loaded Value="True"/>
         <DefaultSyntaxHighlighter Value="Delphi"/>
       </Unit57>
       <Unit58>
@@ -734,83 +759,127 @@
     <General>
       <ActiveWindowIndexAtStart Value="0"/>
     </General>
-    <JumpHistory Count="19" HistoryIndex="18">
+    <JumpHistory Count="30" HistoryIndex="29">
       <Position1>
-        <Filename Value="ViewPort3D.pas"/>
-        <Caret Line="335" Column="15" TopLine="301"/>
+        <Filename Value="ViewPortTop.pas"/>
+        <Caret Line="30" Column="20" TopLine="14"/>
       </Position1>
       <Position2>
-        <Filename Value="ViewPort3D.pas"/>
-        <Caret Line="334" Column="35" TopLine="316"/>
+        <Filename Value="ViewPortTop.pas"/>
+        <Caret Line="40" Column="15" TopLine="24"/>
       </Position2>
       <Position3>
-        <Filename Value="Main.pas"/>
-        <Caret Line="113" Column="44" TopLine="100"/>
+        <Filename Value="ViewPortTop.pas"/>
+        <Caret Line="41" Column="8" TopLine="25"/>
       </Position3>
       <Position4>
-        <Filename Value="Main.pas"/>
-        <Caret Line="641" Column="50" TopLine="608"/>
+        <Filename Value="ViewPortSide.pas"/>
+        <Caret Line="33" Column="3" TopLine="87"/>
       </Position4>
       <Position5>
-        <Filename Value="ViewPort3D.pas"/>
-        <Caret Line="333" Column="1" TopLine="316"/>
+        <Filename Value="ViewPortSide.pas"/>
+        <Caret Line="31" Column="11" TopLine="15"/>
       </Position5>
       <Position6>
-        <Filename Value="Main.pas"/>
-        <Caret Line="644" Column="1" TopLine="611"/>
+        <Filename Value="ViewPortSide.pas"/>
+        <Caret Line="38" Column="11" TopLine="22"/>
       </Position6>
       <Position7>
-        <Filename Value="ViewPort3D.pas"/>
-        <Caret Line="330" Column="1" TopLine="316"/>
+        <Filename Value="ViewPortFront.pas"/>
+        <Caret Line="112" Column="99" TopLine="89"/>
       </Position7>
       <Position8>
-        <Filename Value="Main.pas"/>
-        <Caret Line="567" Column="12" TopLine="77"/>
+        <Filename Value="ViewPortFront.pas"/>
+        <Caret Line="31" Column="11" TopLine="21"/>
       </Position8>
       <Position9>
-        <Filename Value="Main.pas"/>
-        <Caret Line="651" Column="3" TopLine="636"/>
+        <Filename Value="ViewPortFront.pas"/>
+        <Caret Line="38" Column="11" TopLine="22"/>
       </Position9>
       <Position10>
-        <Filename Value="Main.pas"/>
-        <Caret Line="662" Column="1" TopLine="643"/>
+        <Filename Value="ViewPort2D.pas"/>
+        <Caret Line="97" Column="8" TopLine="81"/>
       </Position10>
       <Position11>
-        <Filename Value="Main.pas"/>
-        <Caret Line="138" Column="4" TopLine="114"/>
+        <Filename Value="ViewPort2D.pas"/>
+        <Caret Line="30" Column="11" TopLine="14"/>
       </Position11>
       <Position12>
-        <Filename Value="Selection.pas"/>
-        <Caret Line="134" Column="40" TopLine="106"/>
+        <Filename Value="ViewPort2D.pas"/>
+        <Caret Line="44" Column="3" TopLine="27"/>
       </Position12>
       <Position13>
-        <Filename Value="Main.pas"/>
-        <Caret Line="138" Column="4" TopLine="114"/>
+        <Filename Value="ViewPort2D.pas"/>
+        <Caret Line="97" Column="3" TopLine="80"/>
       </Position13>
       <Position14>
-        <Filename Value="Main.pas"/>
-        <Caret Line="267" Column="17" TopLine="234"/>
+        <Filename Value="Progress.pas"/>
+        <Caret Line="98" Column="13" TopLine="63"/>
       </Position14>
       <Position15>
-        <Filename Value="Main.pas"/>
-        <Caret Line="469" Column="32" TopLine="439"/>
+        <Filename Value="Progress.pas"/>
+        <Caret Line="30" Column="10" TopLine="13"/>
       </Position15>
       <Position16>
-        <Filename Value="Main.pas"/>
-        <Caret Line="471" Column="34" TopLine="439"/>
+        <Filename Value="Frames\SceneFrame.pas"/>
+        <Caret Line="43" Column="11" TopLine="40"/>
       </Position16>
       <Position17>
-        <Filename Value="Main.pas"/>
-        <Caret Line="592" Column="18" TopLine="565"/>
+        <Filename Value="Frames\EntityFrame.pas"/>
+        <Caret Line="152" Column="28" TopLine="139"/>
       </Position17>
       <Position18>
-        <Filename Value="Main.pas"/>
-        <Caret Line="595" Column="18" TopLine="565"/>
+        <Filename Value="Frames\EntityFrame.pas"/>
+        <Caret Line="30" Column="31" TopLine="14"/>
       </Position18>
       <Position19>
-        <Filename Value="Main.pas"/>
-        <Caret Line="596" Column="23" TopLine="565"/>
+        <Filename Value="Progress.pas"/>
+        <Caret Line="31" Column="3" TopLine="14"/>
       </Position19>
+      <Position20>
+        <Filename Value="ViewPort3D.pas"/>
+        <Caret Line="92" Column="1" TopLine="81"/>
+      </Position20>
+      <Position21>
+        <Filename Value="Frames\SpotLightEntityFrame.pas"/>
+        <Caret Line="32" Column="12" TopLine="1"/>
+      </Position21>
+      <Position22>
+        <Filename Value="Frames\SpotLightEntityFrame.pas"/>
+        <Caret Line="31" Column="10" TopLine="13"/>
+      </Position22>
+      <Position23>
+        <Filename Value="Frames\LightEntityFrame.pas"/>
+        <Caret Line="31" Column="11" TopLine="14"/>
+      </Position23>
+      <Position24>
+        <Filename Value="Frames\ModelEntityFrame.pas"/>
+        <Caret Line="59" Column="22" TopLine="38"/>
+      </Position24>
+      <Position25>
+        <Filename Value="Frames\ModelEntityFrame.pas"/>
+        <Caret Line="30" Column="20" TopLine="13"/>
+      </Position25>
+      <Position26>
+        <Filename Value="Frames\LightEntityFrame.pas"/>
+        <Caret Line="31" Column="11" TopLine="14"/>
+      </Position26>
+      <Position27>
+        <Filename Value="ViewPort.pas"/>
+        <Caret Line="419" Column="25" TopLine="115"/>
+      </Position27>
+      <Position28>
+        <Filename Value="Configuration.pas"/>
+        <Caret Line="75" Column="23" TopLine="34"/>
+      </Position28>
+      <Position29>
+        <Filename Value="Configuration.pas"/>
+        <Caret Line="30" Column="21" TopLine="12"/>
+      </Position29>
+      <Position30>
+        <Filename Value="..\Engine\Renderer\Mesh.pas"/>
+        <Caret Line="125" Column="3" TopLine="47"/>
+      </Position30>
     </JumpHistory>
   </ProjectSession>
   <EditorMacros Count="0"/>

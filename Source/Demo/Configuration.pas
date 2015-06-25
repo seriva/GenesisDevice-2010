@@ -28,7 +28,6 @@ interface
 
 uses
   Windows,
-  Messages,
   SysUtils,
   Classes,
   multimon,
