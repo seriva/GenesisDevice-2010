@@ -1,7 +1,7 @@
 object ConfigurationForm: TConfigurationForm
-  Left = 2070
+  Left = 1342
   Height = 308
-  Top = 386
+  Top = 359
   Width = 398
   BorderIcons = [biSystemMenu]
   BorderStyle = bsSingle

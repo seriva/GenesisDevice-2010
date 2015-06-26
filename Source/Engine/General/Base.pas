@@ -35,7 +35,7 @@ uses
   Console,
   Stats,
   Context,
-  BitmapFont;
+  Font;
 
 type
   TEngine = class
@@ -47,7 +47,7 @@ type
     CurrentContext : TContext;
     CurrentCamera  : TCamera;
 
-    DefaultFont : TBitmapFont;
+    Font        : TFont;
     Timer       : TTimer;
     Log         : TLog;
     Console     : TConsole;
@@ -104,12 +104,12 @@ begin
   Engine.Resources.RegisterLoader( '.MTL', LoadMTLResource );
   Engine.Resources.RegisterLoader( '.MD5', LoadMD5Resource );
   Engine.Renderer    := TRenderer.Create();
-  Engine.DefaultFont := TBitmapFont.Create('Lucida Console', 14);
+  Engine.Font        := TFont.Create('Base\Textures\font.dds');
 end;
 
 procedure ClearEngine();
 begin
-  FreeAndNil(Engine.DefaultFont);
+  FreeAndNil(Engine.Font);
   FreeAndNil(Engine.Timer);
   FreeAndNil(Engine.Renderer);
   Engine.Resources.Clear();

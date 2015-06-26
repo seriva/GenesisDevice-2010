@@ -43,7 +43,6 @@ uses
   Model in '..\Engine\Animation\Model.pas',
   GLSLLoader in '..\Engine\Resources\GLSLLoader.pas',
   ShaderLoader in '..\Engine\Resources\ShaderLoader.pas',
-  BitmapFont in '..\Engine\Renderer\BitmapFont.pas',
   Camera in '..\Engine\Renderer\Camera.pas',
   Context in '..\Engine\Renderer\Context.pas',
   FrameBuffer in '..\Engine\Renderer\FrameBuffer.pas',
@@ -74,8 +73,7 @@ uses
   Stats in '..\Engine\General\Stats.pas',
   FloatArray in '..\Engine\Renderer\FloatArray.pas',
   IntegerArray in '..\Engine\Renderer\IntegerArray.pas',
-  Mathematics in '..\Engine\General\Mathematics.pas',
-  DirectDraw in '..\Libraries\DirectX\DirectDraw.pas';
+  Mathematics in '..\Engine\General\Mathematics.pas';
 
 begin
   Application.Initialize;

@@ -26,7 +26,6 @@ interface
 
 uses
   Windows,
-  DirectDraw,
   SysUtils,
   Base,
   dglOpenGL,
@@ -36,6 +35,103 @@ uses
 function LoadDDSResource(const aName : String): TResource;
 
 implementation
+
+{******************************************************************************}
+{* Records for loading DDS files                                              *}
+{******************************************************************************}
+
+type
+  TDDColorKey = packed record
+    dwColorSpaceLowValue: DWORD;
+    dwColorSpaceHighValue: DWORD;
+  end;
+
+  TDDPixelFormat = packed record
+    dwSize: DWORD;
+    dwFlags: DWORD;
+    dwFourCC: DWORD;
+    case Integer of
+      1: (
+          dwRGBBitCount : DWORD;
+          dwRBitMask : DWORD;
+          dwGBitMask : DWORD;
+          dwBBitMask : DWORD;
+          dwRGBAlphaBitMask : DWORD;
+          );
+      2: (
+          dwYUVBitCount : DWORD;
+          dwYBitMask : DWORD;
+          dwUBitMask : DWORD;
+          dwVBitMask : DWORD;
+          dwYUVAlphaBitMask : DWORD;
+          );
+      3: (
+          dwZBufferBitDepth : DWORD;
+          dwStencilBitDepth : DWORD;
+          dwZBitMask : DWORD;
+          dwStencilBitMask : DWORD;
+          dwLuminanceAlphaBitMask : DWORD;
+          );
+      4: (
+          dwAlphaBitDepth : DWORD;
+          dwLuminanceBitMask : DWORD;
+          dwBumpDvBitMask : DWORD;
+          dwBumpLuminanceBitMask : DWORD;
+          dwRGBZBitMask : DWORD;
+          );
+      5: (
+           dwLuminanceBitCount : DWORD;
+           dwBumpDuBitMask : DWORD;
+           Fill1, Fill2    : DWORD;
+           dwYUVZBitMask   : DWORD;
+         );
+      6: ( dwBumpBitCount  : DWORD;
+         );
+  end;
+
+  TDDSCaps2 = packed record
+    dwCaps: DWORD;
+    dwCaps2 : DWORD;
+    dwCaps3 : DWORD;
+    dwCaps4 : DWORD;
+  end;
+
+  TDDSurfaceDesc2 = packed record
+    dwSize: DWORD;
+    dwFlags: DWORD;
+    dwHeight: DWORD;
+    dwWidth: DWORD;
+    case Integer of
+    0: (
+      lPitch : Longint;
+     );
+    1: (
+      dwLinearSize : DWORD;
+      dwBackBufferCount: DWORD;
+      case Integer of
+      0: (
+        dwMipMapCount: DWORD;
+        dwAlphaBitDepth: DWORD;
+        dwReserved: DWORD;
+        lpSurface: Pointer;
+        ddckCKDestOverlay: TDDColorKey;
+        ddckCKDestBlt: TDDColorKey;
+        ddckCKSrcOverlay: TDDColorKey;
+        ddckCKSrcBlt: TDDColorKey;
+        ddpfPixelFormat: TDDPixelFormat;
+        ddsCaps: TDDSCaps2;
+        dwTextureStage: DWORD;
+       );
+      1: (
+        dwRefreshRate: DWORD;
+       );
+     );
+  end;
+
+const
+  FOURCC_DXT1 = DWORD(Byte('D') or (Byte('X') shl 8) or (Byte('T') shl 16) or (Byte('1') shl 24));
+  FOURCC_DXT3 = DWORD(Byte('D') or (Byte('X') shl 8) or (Byte('T') shl 16) or (Byte('3') shl 24));
+  FOURCC_DXT5 = DWORD(Byte('D') or (Byte('X') shl 8) or (Byte('T') shl 16) or (Byte('5') shl 24));
 
 function LoadDDSResource(const aName : String): TResource;
 var

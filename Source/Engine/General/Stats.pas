@@ -118,33 +118,36 @@ begin
   if not(FShow) then exit;
 
   //background quad
-  glDisable(GL_DEPTH_TEST);
   glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
   glEnable(GL_BLEND);
   Engine.Renderer.SetColor(0.4,0.4,0.4,0.75);
   glBegin(GL_QUADS);
     glVertex2f(10,10);
     glVertex2f(205,10);
-    glVertex2f(205,72);
-    glVertex2f(10,72);
+    glVertex2f(205,75);
+    glVertex2f(10,75);
   glEnd();
   glDisable(GL_BLEND);
-  glLineWidth(2);
+  glLineWidth(1);
   Engine.Renderer.SetColor(1,1,1,1);
   glBegin(GL_LINE_LOOP);
     glVertex2f(10,10);
     glVertex2f(205,10);
-    glVertex2f(205,74);
-    glVertex2f(10,74);
+    glVertex2f(205,75);
+    glVertex2f(10,75);
   glEnd();
   glLineWidth(1);
 
   //text
-  Engine.Renderer.SetColor(1,1,1,1);
-  Engine.DefaultFont.RenderText(15, 15, 'Lights : ' + IntToStr(FLightCount));
-  Engine.DefaultFont.RenderText(15, 30, 'Meshes : ' + IntToStr(FModelCount));
-  Engine.DefaultFont.RenderText(15, 45, 'Tris   : ' + IntToStr(FTrisCount));
-  Engine.DefaultFont.RenderText(15, 60, 'Fps    : ' + IntToStr(FFPS));
+  Engine.Font.Render(1, 1, 1, 15, 15, 0.2, 'Lights' );
+  Engine.Font.Render(1, 1, 1, 15, 30, 0.2, 'Meshes');
+  Engine.Font.Render(1, 1, 1, 15, 45, 0.2, 'Tris');
+  Engine.Font.Render(1, 1, 1, 15, 60, 0.2, 'Fps');
+  Engine.Font.Render(1, 1, 1, 100, 15, 0.2, ': ' + IntToStr(FLightCount));
+  Engine.Font.Render(1, 1, 1, 100, 30, 0.2, ': ' + IntToStr(FModelCount));
+  Engine.Font.Render(1, 1, 1, 100, 45, 0.2, ': ' + IntToStr(FTrisCount));
+  Engine.Font.Render(1, 1, 1, 100, 60, 0.2, ': ' + IntToStr(FFPS));
+
   glEnable(GL_DEPTH_TEST);
 end;
 

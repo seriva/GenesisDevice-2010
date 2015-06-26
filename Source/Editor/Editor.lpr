@@ -41,7 +41,6 @@ uses
   Base in '..\Engine\General\Base.pas',
   Log in '..\Engine\General\Log.pas',
   Timer in '..\Engine\General\Timer.pas',
-  BitmapFont in '..\Engine\Renderer\BitmapFont.pas',
   Camera in '..\Engine\Renderer\Camera.pas',
   Context in '..\Engine\Renderer\Context.pas',
   FrameBuffer in '..\Engine\Renderer\FrameBuffer.pas',
@@ -87,8 +86,7 @@ uses
   Stats in '..\Engine\General\Stats.pas',
   Mathematics in '..\Engine\General\Mathematics.pas',
   FloatArray in '..\Engine\Renderer\FloatArray.pas',
-  IntegerArray in '..\Engine\Renderer\IntegerArray.pas',
-  DirectDraw in '..\Libraries\DirectX\DirectDraw.pas';
+  IntegerArray in '..\Engine\Renderer\IntegerArray.pas';
 
 begin
   //init the application

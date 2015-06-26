@@ -28,9 +28,6 @@ uses
   Classes,
   Windows,
   SysUtils,
-  MMSystem,
-  Mathematics,
-  Camera,
   ResourceUtils,
   dglOpenGL;
 
@@ -145,6 +142,7 @@ var
   iDT, iTime : Integer;
   iRowCount : Integer;
   iW, iHDiv2, iH : Integer;
+  iX : single;
 begin
   if Engine.CurrentContext = nil then exit;
 
@@ -184,7 +182,7 @@ begin
     glVertex2f(0, iH+FAniHeight);
   glEnd();
   glDisable(GL_BLEND);
-  glLineWidth(2);
+  glLineWidth(1);
   Engine.Renderer.SetColor(1,1,1,1);
   glBegin(GL_LINES);
     glVertex2f(0, iHDiv2+FAniHeight);
@@ -192,20 +190,18 @@ begin
     glVertex2f(0, iHDiv2+20+FAniHeight);
     glVertex2f(iW, iHDiv2+20+FAniHeight);
   glEnd();
-  glLineWidth(1);
 
-  Engine.Renderer.SetColor(1,1,1,1);
   iJ := 0;
   iRowCount := iHDiv2 div 13;
   for iI := FRow downto FRow-iRowCount do
   begin
     If  (iI >= 0) then
     begin
-      Engine.DefaultFont.RenderText( 2, (iHDiv2+FAniHeight+5)+18+(iJ*13), Engine.Log.Text.Strings[iI]);
+      Engine.Font.Render(1, 1, 1, 2, (iHDiv2+FAniHeight+5)+18+(iJ*13), 0.2, Engine.Log.Text.Strings[iI] );
       iJ := iJ + 1;
     end
   end;
-  Engine.DefaultFont.RenderText( 2, (iHDiv2+FAniHeight+5), FCommandString);
+  Engine.Font.Render(1, 1, 1, 2, (iHDiv2+FAniHeight+3), 0.2, FCommandString );
 
   FCursorTime  := FCursorTime + iDT;
   if (FCursorTime >= 500) then
@@ -214,7 +210,10 @@ begin
     FCursorTime := 0;
   end;
   if FShowTime then
-    Engine.DefaultFont.RenderText( ((FCursorPos-1) * 9)+2, (iHDiv2+FAniHeight+4), '_');
+  begin
+    iX :=Engine.Font.TextWidth(Copy(FCommandString, 1, FCursorpos-1), 0.2);
+    Engine.Font.Render(1, 1, 1, iX+2, (iHDiv2+FAniHeight+2), 0.2, '_' );
+  end;
 
   glEnable(GL_DEPTH_TEST);
 end;

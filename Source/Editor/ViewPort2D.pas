@@ -229,16 +229,14 @@ end;
 procedure TViewPort2DForm.Render2DOverlay();
 begin
   //Axis 1
-  Engine.Renderer.SetColor(Color1);
-  Engine.DefaultFont.RenderText(54, 7, Axis1);
+  Engine.Font.Render(Color1.x, Color1.y, Color1.z, 54, 7, 0.2, Axis1);
   glBegin(GL_LINES);
     glVertex2f(10,10);
     glVertex2f(50,10);
   glEnd();
 
   //Axis 2
-  Engine.Renderer.SetColor(Color2);
-  Engine.DefaultFont.RenderText(7, 54, Axis2);
+  Engine.Font.Render(Color2.x, Color2.y, Color2.z, 7, 54, 0.2, Axis2);
   glBegin(GL_LINES);
     glVertex2f(10,10);
     glVertex2f(10,50);

@@ -70,6 +70,7 @@ type
     //common shaders
     ColorShader            : TShaderProgram;
     CopyShader             : TShaderProgram;
+    FontShader             : TShaderProgram;
 
     //light shaders
     PointLightShader       : TShaderProgram;
@@ -410,8 +411,8 @@ procedure TRenderer.IniTShaderPrograms();
 begin
   //common shaders
   ColorShader            := LoadGLSLResource('Base\Shaders\Common\Color.glsl') as TShaderProgram;
-  CheckErrors();
   CopyShader             := LoadGLSLResource('Base\Shaders\Common\Copy.glsl') as TShaderProgram;
+  FontShader             := LoadGLSLResource('Base\Shaders\Common\font.glsl') as TShaderProgram;
 
   //light shaders
   PointLightShader       := LoadGLSLResource('Base\Shaders\Lighting\PointLight.glsl') as TShaderProgram;
@@ -434,8 +435,9 @@ end;
 procedure TRenderer.ClearShaders();
 begin
   //common shaders
-  FreeAndNil( ColorShader);
-  FreeAndNil( CopyShader);
+  FreeAndNil(ColorShader);
+  FreeAndNil(CopyShader);
+  FreeAndNil(FontShader);
 
   //light shaders
   FreeAndNil(PointLightShader);
