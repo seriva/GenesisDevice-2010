@@ -48,13 +48,11 @@
         <ComponentName Value="MainForm"/>
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
-        <UnitName Value="Main"/>
       </Unit1>
       <Unit2>
         <Filename Value="Configuration.pas"/>
         <IsPartOfProject Value="True"/>
         <HasResources Value="True"/>
-        <UnitName Value="Configuration"/>
       </Unit2>
       <Unit3>
         <Filename Value="ViewPort.pas"/>
@@ -62,7 +60,6 @@
         <ComponentName Value="ViewPortForm"/>
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
-        <UnitName Value="ViewPort"/>
       </Unit3>
       <Unit4>
         <Filename Value="ViewPort2D.pas"/>
@@ -70,7 +67,6 @@
         <ComponentName Value="ViewPort2DForm"/>
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
-        <UnitName Value="ViewPort2D"/>
       </Unit4>
       <Unit5>
         <Filename Value="ViewPort3D.pas"/>
@@ -78,13 +74,11 @@
         <ComponentName Value="ViewPort3DForm"/>
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
-        <UnitName Value="ViewPort3D"/>
       </Unit5>
       <Unit6>
         <Filename Value="ViewPortFront.pas"/>
         <IsPartOfProject Value="True"/>
         <HasResources Value="True"/>
-        <UnitName Value="ViewPortFront"/>
       </Unit6>
       <Unit7>
         <Filename Value="ViewPortSide.pas"/>
@@ -92,18 +86,15 @@
         <ComponentName Value="ViewPortSideForm"/>
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
-        <UnitName Value="ViewPortSide"/>
       </Unit7>
       <Unit8>
         <Filename Value="ViewPortTop.pas"/>
         <IsPartOfProject Value="True"/>
         <HasResources Value="True"/>
-        <UnitName Value="ViewPortTop"/>
       </Unit8>
       <Unit9>
         <Filename Value="..\Libraries\OpenGL\dglOpenGL.pas"/>
         <IsPartOfProject Value="True"/>
-        <UnitName Value="dglOpenGL"/>
       </Unit9>
       <Unit10>
         <Filename Value="..\Engine\Animation\Model.pas"/>
@@ -116,37 +107,30 @@
       <Unit12>
         <Filename Value="..\Engine\General\Base.pas"/>
         <IsPartOfProject Value="True"/>
-        <UnitName Value="Base"/>
       </Unit12>
       <Unit13>
         <Filename Value="..\Engine\General\Log.pas"/>
         <IsPartOfProject Value="True"/>
-        <UnitName Value="Log"/>
       </Unit13>
       <Unit14>
         <Filename Value="..\Engine\General\Timer.pas"/>
         <IsPartOfProject Value="True"/>
-        <UnitName Value="Timer"/>
       </Unit14>
       <Unit15>
         <Filename Value="..\Engine\Renderer\BitmapFont.pas"/>
         <IsPartOfProject Value="True"/>
-        <UnitName Value="BitmapFont"/>
       </Unit15>
       <Unit16>
         <Filename Value="..\Engine\Renderer\Camera.pas"/>
         <IsPartOfProject Value="True"/>
-        <UnitName Value="Camera"/>
       </Unit16>
       <Unit17>
         <Filename Value="..\Engine\Renderer\Context.pas"/>
         <IsPartOfProject Value="True"/>
-        <UnitName Value="Context"/>
       </Unit17>
       <Unit18>
         <Filename Value="..\Engine\Renderer\FrameBuffer.pas"/>
         <IsPartOfProject Value="True"/>
-        <UnitName Value="FrameBuffer"/>
       </Unit18>
       <Unit19>
         <Filename Value="..\Engine\Renderer\GBuffer.pas"/>
@@ -159,7 +143,6 @@
       <Unit21>
         <Filename Value="..\Engine\Renderer\Mesh.pas"/>
         <IsPartOfProject Value="True"/>
-        <UnitName Value="Mesh"/>
       </Unit21>
       <Unit22>
         <Filename Value="..\Engine\Renderer\OcclusionQuery.pas"/>
@@ -172,7 +155,6 @@
       <Unit24>
         <Filename Value="..\Engine\Renderer\Renderer.pas"/>
         <IsPartOfProject Value="True"/>
-        <UnitName Value="Renderer"/>
       </Unit24>
       <Unit25>
         <Filename Value="..\Engine\Renderer\SBuffer.pas"/>
@@ -181,7 +163,6 @@
       <Unit26>
         <Filename Value="..\Engine\Renderer\Shader.pas"/>
         <IsPartOfProject Value="True"/>
-        <UnitName Value="Shader"/>
       </Unit26>
       <Unit27>
         <Filename Value="..\Engine\Renderer\ShaderProgram.pas"/>
@@ -198,7 +179,6 @@
       <Unit30>
         <Filename Value="..\Engine\Renderer\Texture.pas"/>
         <IsPartOfProject Value="True"/>
-        <UnitName Value="Texture"/>
       </Unit30>
       <Unit31>
         <Filename Value="..\Engine\Resources\MD5Loader.pas"/>
@@ -215,22 +195,18 @@
       <Unit34>
         <Filename Value="..\Engine\Resources\Resources.pas"/>
         <IsPartOfProject Value="True"/>
-        <UnitName Value="Resources"/>
       </Unit34>
       <Unit35>
         <Filename Value="..\Engine\Resources\ResourceUtils.pas"/>
         <IsPartOfProject Value="True"/>
-        <UnitName Value="ResourceUtils"/>
       </Unit35>
       <Unit36>
         <Filename Value="..\Engine\Resources\ShaderLoader.pas"/>
         <IsPartOfProject Value="True"/>
-        <UnitName Value="ShaderLoader"/>
       </Unit36>
       <Unit37>
         <Filename Value="..\Engine\Scene\Entity.pas"/>
         <IsPartOfProject Value="True"/>
-        <UnitName Value="Entity"/>
       </Unit37>
       <Unit38>
         <Filename Value="..\Engine\Scene\LightEntity.pas"/>
@@ -243,7 +219,6 @@
       <Unit40>
         <Filename Value="..\Engine\Scene\AnimatedModelEntity.pas"/>
         <IsPartOfProject Value="True"/>
-        <UnitName Value="AnimatedModelEntity"/>
       </Unit40>
       <Unit41>
         <Filename Value="..\Engine\Scene\PointLightEntity.pas"/>
@@ -252,7 +227,6 @@
       <Unit42>
         <Filename Value="..\Engine\Scene\Scene.pas"/>
         <IsPartOfProject Value="True"/>
-        <UnitName Value="Scene"/>
       </Unit42>
       <Unit43>
         <Filename Value="..\Engine\Scene\SpotLightEntity.pas"/>
@@ -261,12 +235,10 @@
       <Unit44>
         <Filename Value="Selection.pas"/>
         <IsPartOfProject Value="True"/>
-        <UnitName Value="Selection"/>
       </Unit44>
       <Unit45>
         <Filename Value="EditorEntity.pas"/>
         <IsPartOfProject Value="True"/>
-        <UnitName Value="EditorEntity"/>
       </Unit45>
       <Unit46>
         <Filename Value="..\Engine\Resources\SceneIO.pas"/>
@@ -278,17 +250,14 @@
         <ComponentName Value="ProgressForm"/>
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
-        <UnitName Value="Progress"/>
       </Unit47>
       <Unit48>
         <Filename Value="..\Engine\Resources\GLSLLoader.pas"/>
         <IsPartOfProject Value="True"/>
-        <UnitName Value="GLSLLoader"/>
       </Unit48>
       <Unit49>
         <Filename Value="..\Engine\Resources\Resource.pas"/>
         <IsPartOfProject Value="True"/>
-        <UnitName Value="Resource"/>
       </Unit49>
       <Unit50>
         <Filename Value="..\Engine\Scene\ModelEntity.pas"/>
@@ -297,12 +266,10 @@
       <Unit51>
         <Filename Value="BrowserNodeData.pas"/>
         <IsPartOfProject Value="True"/>
-        <UnitName Value="BrowserNodeData"/>
       </Unit51>
       <Unit52>
         <Filename Value="..\Engine\Resources\DDSLoader.pas"/>
         <IsPartOfProject Value="True"/>
-        <UnitName Value="DDSLoader"/>
       </Unit52>
       <Unit53>
         <Filename Value="Frames\EntityFrame.pas"/>
@@ -310,7 +277,6 @@
         <ComponentName Value="EntityPropFrame"/>
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Frame"/>
-        <UnitName Value="EntityFrame"/>
       </Unit53>
       <Unit54>
         <Filename Value="Frames\SceneFrame.pas"/>
@@ -318,7 +284,6 @@
         <ComponentName Value="ScenePropFrame"/>
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Frame"/>
-        <UnitName Value="SceneFrame"/>
       </Unit54>
       <Unit55>
         <Filename Value="Frames\ModelEntityFrame.pas"/>
@@ -326,7 +291,6 @@
         <ComponentName Value="ModelEntityPropFrame"/>
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Frame"/>
-        <UnitName Value="ModelEntityFrame"/>
       </Unit55>
       <Unit56>
         <Filename Value="Frames\LightEntityFrame.pas"/>
@@ -334,7 +298,6 @@
         <ComponentName Value="LightEntityPropFrame"/>
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Frame"/>
-        <UnitName Value="LightEntityFrame"/>
       </Unit56>
       <Unit57>
         <Filename Value="Frames\SpotLightEntityFrame.pas"/>
@@ -342,7 +305,6 @@
         <ComponentName Value="SpotLightEntityPropFrame"/>
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Frame"/>
-        <UnitName Value="SpotLightEntityFrame"/>
       </Unit57>
       <Unit58>
         <Filename Value="..\Engine\General\Stats.pas"/>
@@ -351,12 +313,10 @@
       <Unit59>
         <Filename Value="..\Engine\General\Mathematics.pas"/>
         <IsPartOfProject Value="True"/>
-        <UnitName Value="Mathematics"/>
       </Unit59>
       <Unit60>
         <Filename Value="..\Engine\Renderer\FloatArray.pas"/>
         <IsPartOfProject Value="True"/>
-        <UnitName Value="FloatArray"/>
       </Unit60>
       <Unit61>
         <Filename Value="..\Engine\Renderer\IntegerArray.pas"/>
@@ -365,7 +325,6 @@
       <Unit62>
         <Filename Value="..\Libraries\DirectX\DirectDraw.pas"/>
         <IsPartOfProject Value="True"/>
-        <UnitName Value="DirectDraw"/>
       </Unit62>
     </Units>
   </ProjectOptions>
@@ -393,11 +352,7 @@
       </Options>
     </Linking>
     <Other>
-      <CompilerMessages>
-        <MsgFileName Value=""/>
-      </CompilerMessages>
       <CustomOptions Value="-dBorland -dVer150 -dDelphi7 -dCompiler6_Up -dPUREPASCAL"/>
-      <CompilerPath Value="$(CompPath)"/>
     </Other>
   </CompilerOptions>
   <Debugging>

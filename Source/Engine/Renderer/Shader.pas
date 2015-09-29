@@ -110,7 +110,7 @@ begin
   glShaderSource(Handle, 1, @iSource, @iLen);
   glCompileShader(Handle);
   glGetShaderiv(Handle, GL_COMPILE_STATUS, @iCompiled);
-  if (iCompiled <> GL_TRUE) then
+  if (iCompiled <> 1) then
   begin
     case aType of
       GL_VERTEX_SHADER   : Raise Exception.Create('Failed to compile vertex shader: ' + GetInfoLog(Handle) );

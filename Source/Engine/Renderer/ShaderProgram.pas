@@ -46,10 +46,10 @@ type
     procedure   AddShader(const aShader : TShader);
     procedure   Link();
     procedure   SetInt(const aVariable : String;  const aV : integer);
-    procedure   SetFloat(const aVariable : String; const aV : Double);
-    procedure   SetFloat2(const aVariable : String; const aV0, aV1 : Double);
-    procedure   SetFloat3(const aVariable : String; const aV0, aV1, aV2 : Double);
-    procedure   SetFloat4(const aVariable : String; const aV0, aV1, aV2, aV3 : Double);
+    procedure   SetFloat(const aVariable : String; const aV : Single);
+    procedure   SetFloat2(const aVariable : String; const aV0, aV1 : Single);
+    procedure   SetFloat3(const aVariable : String; const aV0, aV1, aV2 : Single);
+    procedure   SetFloat4(const aVariable : String; const aV0, aV1, aV2, aV3 : Single);
     procedure   SetAttributeFloat(const aVariable : String; const aV : Single);
     procedure   SetAttributeFloat2(const aVariable : String; const aV0, aV1 : Single);
     procedure   SetAttributeFloat3(const aVariable : String; const aV0, aV1, aV2 : Single);
@@ -93,7 +93,7 @@ begin
     glAttachShader(FHandle, FShaders.Get(iI).Handle);
   glLinkProgram(FHandle);
   glGetProgramiv(FHandle, GL_LINK_STATUS, @iLinked);
-  if (iLinked <> GL_TRUE) then
+  if (iLinked <> 1) then
     Raise Exception.Create('Failed to link shader: ' + GetInfoLog(FHandle) );
 end;
 
@@ -112,22 +112,22 @@ begin
    glUniform1iARB( glGetUniformLocationARB(FHandle, @PAnsiChar(AnsiString(aVariable))[0]), aV);
 end;
 
-procedure TShaderProgram.SetFloat(const aVariable : String; const aV : Double);
+procedure TShaderProgram.SetFloat(const aVariable : String; const aV : Single);
 begin
   glUniform1fARB( glGetUniformLocationARB(FHandle, @PAnsiChar(AnsiString(aVariable))[0]), aV);
 end;
 
-procedure TShaderProgram.SetFloat2(const aVariable : String; const aV0, aV1 : Double);
+procedure TShaderProgram.SetFloat2(const aVariable : String; const aV0, aV1 : Single);
 begin
   glUniform2fARB( glGetUniformLocationARB(FHandle, @PAnsiChar(AnsiString(aVariable))[0]), aV0, aV1);
 end;
 
-procedure TShaderProgram.SetFloat3(const aVariable : String; const aV0, aV1, aV2 : Double);
+procedure TShaderProgram.SetFloat3(const aVariable : String; const aV0, aV1, aV2 : Single);
 begin
   glUniform3fARB( glGetUniformLocationARB(FHandle, @PAnsiChar(AnsiString(aVariable))[0]), aV0, aV1, aV2);
 end;
 
-procedure TShaderProgram.SetFloat4(const aVariable : String; const aV0, aV1, aV2, aV3 : Double);
+procedure TShaderProgram.SetFloat4(const aVariable : String; const aV0, aV1, aV2, aV3 : Single);
 begin
   glUniform4fARB( glGetUniformLocationARB(FHandle, @PAnsiChar(AnsiString(aVariable))[0]), aV0, aV1, aV2, aV3);
 end;

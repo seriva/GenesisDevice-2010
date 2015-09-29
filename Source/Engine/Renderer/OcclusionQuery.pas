@@ -84,7 +84,7 @@ var
 begin
   glGetQueryObjectiv(FOcclusionQuery,GL_QUERY_RESULT_AVAILABLE,@iDone);
 
-  If iDone = GL_TRUE then
+  If iDone = 1 then
     result := True
   else
     result := False;

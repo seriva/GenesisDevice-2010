@@ -321,7 +321,7 @@ begin
     MainForm.LightShader.Bind();
     MainForm.LightShader.SetInt('lightMap', 0);
     MainForm.LightTexture.Bind(0);
-    glTexEnvi(GL_POINT_SPRITE_ARB,GL_COORD_REPLACE_ARB,GL_TRUE);
+    glTexEnvi(GL_POINT_SPRITE_ARB,GL_COORD_REPLACE_ARB, 1);
     glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
     glEnable(GL_BLEND);
   end;
